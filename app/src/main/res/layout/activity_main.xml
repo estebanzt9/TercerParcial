@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="TU INFORMACIÓN"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="21dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="225dp"
+        android:hint="Edad"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="14dp"
+        android:hint="Contacto"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="18dp"
+        android:hint="Nacimiento"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="81dp"
+        android:text="Agregar Información"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInsert"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="233dp"
+        android:text="Actualizar Información"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:layout_marginTop="13dp"
+        android:text="Darse de baja"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:layout_marginTop="16dp"
+        android:text="Consultar información"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnView2"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:layout_marginTop="82dp"
+        android:text="Ver Edad"
+        android:textSize="12sp" />
+
+</RelativeLayout>
